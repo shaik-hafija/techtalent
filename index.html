@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 27px;">SkillBridge</h1>
+        </div>
+        <div class="nav-right">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#bookedservices">Booked Services</a></li>
+            </ul>
+            <div class="profile">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Profile" class="profile-img">
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="display: flex; align-items: flex-start;">
+        <!-- Header Section -->
+        <div class="header" style="flex: 1; padding-right: 20px;margin-top: 100px;margin-right: 80px;">
+            <h1 style="font-size: 70px;font-family: 'Times New Roman', Times, serif;">Connect with Local Talent 
+                <span class="emoji">👩‍💻🎨💼🛠️👨‍💼👨‍🔧</span>
+            </h1>
+            <p style="font-size: x-large;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Discover skilled professionals in your area, showcase your own talents, and grow your network with opportunities tailored to your community.</p>
+            <div class="button-divide" style="margin-top: 40px;margin-left: 120px;">
+                <button class="profile-button">Complete Your Profile</button>
+                <button class="explore-button">Explore</button>
+            </div>
+            
+        </div>
+        
+    
+        <!-- Cards Section -->
+        <div class="cards-section" style="flex: 1; display: grid; grid-template-columns: 1fr; gap: 20px;">
+            <div class="card internship" style="display: flex; align-items: center;">
+                <img src="find_services_icon.png" alt="Find Services Icon" style="width:100px; margin-right: 100px;">
+                <div>
+                    <h2>Find Services</h2>
+                    <p>Connect with local professionals for various needs</p>
+                </div>
+            </div>
+    
+            <div class="card learn" style="display: flex; align-items: center;">
+                <img src="offer_services_icon.png" alt="Offer Services Icon" style="width: 100px; margin-right: 100px;">
+                <div>
+                    <h2>Offer Services</h2>
+                    <p>Expand your reach and offer your expertise</p>
+                </div>
+            </div>
+    
+            <div class="card jobs" style="display: flex; align-items: center;">
+                <img src="grow_icon.png" alt="Grow Icon" style="width: 100px; margin-right: 100px;">
+                <div>
+                    <h2>Grow</h2>
+                    <p>Get recognized and rated by satisfied clients</p>
+                </div>
+            </div>
+    
+            <div class="card practice" style="display: flex; align-items: center;">
+                <img src="direct_bookings_icon.png" alt="Direct Bookings Icon" style="width: 100px; margin-right: 50px;">
+                <div>
+                    <h2>Receive Direct Bookings</h2>
+                    <p>Easily connect and communicate with clients, saving time by eliminating intermediaries.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
